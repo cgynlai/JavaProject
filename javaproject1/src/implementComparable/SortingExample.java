@@ -16,10 +16,12 @@ public class SortingExample {
 	   Item item2 = new Item(20,30);
 	   Item item3 = new Item(16,15);
 	   Item item4 = new Item(15,20);
+	   Item item5 = new Item(05,10);
 	   items.add(item1);
 	   items.add(item2);
 	   items.add(item3);
 	   items.add(item4);
+	   items.add(item5);
 	   
        Collections.sort(items);
        

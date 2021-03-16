@@ -30,7 +30,7 @@ public void setWeight(int weight) {
 		Item otherItem = (Item) o;
 		//return neg number if this object is less than passed in object
 		// sort on value
-		return this.value - otherItem.value;
+		return this.weight - otherItem.weight;
 	}
 
 }
