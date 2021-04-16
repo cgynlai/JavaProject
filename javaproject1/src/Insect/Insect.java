@@ -13,6 +13,7 @@ public class Insect {
 		Insect buzz1 = new Insect();
 		Insect buzz2 = new Insect();
 		Insect buzz3 = new Insect();
+		Insect buzz4 = new Insect();
 	}
 
 }
