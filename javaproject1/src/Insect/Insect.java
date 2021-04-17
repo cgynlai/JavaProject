@@ -11,6 +11,8 @@ public class Insect {
 	//static constant/variables
 	public static final double DIST_WEIGHT_LOSS_FACTOR = 0.01;
 	private static int population = 0;
+	public static final int DEFAULT_X = 0;
+	public static final int DEFAULT_Y = 0;
 	
 	
 	//constructor
@@ -21,6 +23,14 @@ public class Insect {
 		weight = wgt;
 		x = xVal;
 		y = yVal;
+		population++;
+	}
+	
+	//overloading constructor
+	public Insect (double initWgt) {
+		weight = initWgt;
+		x = DEFAULT_X;
+		y = DEFAULT_Y;
 		population++;
 	}
 	
@@ -48,15 +58,47 @@ public class Insect {
 		return y;
 	}
 	
-	// static getter
+	public double getWeight() {
+		return weight;
+	}
+	
+	
+	// static getter, can only access via class level
 	public static int getPopulation() {
 		return population;
+	}
+	
+	//setter or mutator 
+	public void setX(int newX) {
+		if(isLegalX(newX)) {
+			x = newX;
+		}
+		else {
+			System.out.println("pls input positive value");
+		}
+	}
+	
+	public void setY(int newY) {
+		if(isLegalY(newY)) {
+			y= newY;
+		}
+		else {
+			System.out.println("pls input positive value");
+		}
 	}
 	
 	//'helper' method used only internally, is private and static(not invoked on any instance)
 	private static double calDistance(double x1, double y1, double x2, double y2) {
         		
 		return Math.sqrt((y2-y1)*(y2-y1)+(x2-x1)*(x2-x1));
+	}
+	
+	public static boolean isLegalX(int newX) {
+		return (newX>0 ? true : false);
+	}
+	
+	public static boolean isLegalY(int newY) {
+		return (newY>0 ? true : false);
 	}
 	
 	

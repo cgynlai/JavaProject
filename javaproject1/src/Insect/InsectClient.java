@@ -11,6 +11,10 @@ public class InsectClient {
 		System.out.println("X position: " + buzz1.getX() + "; " + "Y position: " + buzz1.getY());
 		buzz1.setX(-500);
 		System.out.println("X position: " + buzz1.getX() + "; " + "Y position: " + buzz1.getY());
+		
+		Insect bug2 = new Insect(32);
+		System.out.println("weight is: " + bug2.getWeight());
+		System.out.println("X position: " + bug2.getX() + "; " + "Y position: " + bug2.getY());
 	}
 
 }
