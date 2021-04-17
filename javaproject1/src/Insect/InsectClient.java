@@ -7,6 +7,10 @@ public class InsectClient {
 		Insect buzz1 = new Insect(10, 200, 300);
 		System.out.println("Population: " + Insect.getPopulation());
 		System.out.println("X position: " + buzz1.getX() + "; " + "Y position: " + buzz1.getY());
+		buzz1.setX(500);
+		System.out.println("X position: " + buzz1.getX() + "; " + "Y position: " + buzz1.getY());
+		buzz1.setX(-500);
+		System.out.println("X position: " + buzz1.getX() + "; " + "Y position: " + buzz1.getY());
 	}
 
 }
