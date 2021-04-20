@@ -19,10 +19,19 @@ public class Insect {
 	/* constructor is the only function without return type and void and
 	 * must be same name as class. 
 	 */
-	public Insect (double wgt, int xVal, int yVal) {
-		weight = wgt;
-		x = xVal;
-		y = yVal;
+//	public Insect (double wgt, int xVal, int yVal) {
+//		weight = wgt;
+//		x = xVal;
+//		y = yVal;
+//		population++;
+//	}
+	
+	//best practice is to use same identifier name for parameter and instant variable but they are different
+	//use 'this' to refer to the instant of the class
+	public Insect (double weight, int x, int y) {
+		this.weight = weight;
+		this.x = x;
+		this.y = y;
 		population++;
 	}
 	
