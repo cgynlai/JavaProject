@@ -8,8 +8,8 @@ public class DogClient extends Dog {
 	}
 
 	public static void main(String[] args) {
-		DogClient dog9 = new DogClient("huskie", 30.5);
-		dog9.bark();
+		DogClient dog10 = new DogClient("huskie", 30.5);
+		dog10.bark();
 
 	}
 
