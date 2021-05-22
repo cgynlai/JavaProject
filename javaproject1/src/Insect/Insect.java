@@ -8,9 +8,12 @@ public class Insect {
 	private int x;
 	private int y;
 	
-	//static constant/variables
-	public static final double DIST_WEIGHT_LOSS_FACTOR = 0.01;
+	//static keyword
+	//the static variable belongs to class itself, all instantiated objects share same copy 
 	private static int population = 0;
+	
+	//static constant/variables
+	public static final double DIST_WEIGHT_LOSS_FACTOR = 0.01;	
 	public static final int DEFAULT_X = 0;
 	public static final int DEFAULT_Y = 0;
 	

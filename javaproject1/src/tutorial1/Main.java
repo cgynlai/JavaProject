@@ -29,6 +29,7 @@ public class Main {
 		total = total + element;
 	}
 	System.out.println(total);
+	System.out.println("end of test");
 }
 	
 	
